@@ -1,0 +1,99 @@
+make[1]: Entering directory '/workspaces/codespaces-blank/android_kernel_sony_sdm845/out'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+drivers/usb/gadget/Kconfig:629:warning: defaults for choice values not supported
+  CHK     include/config/kernel.release
+  GEN     ./Makefile
+  CHK     include/generated/uapi/linux/version.h
+  CHK     include/generated/utsrelease.h
+  Using .. as source for kernel
+  CHK     scripts/mod/devicetable-offsets.h
+  CHK     include/generated/timeconst.h
+  CHK     include/generated/bounds.h
+  CHK     include/generated/asm-offsets.h
+  CALL    ../scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  DTC     arch/arm64/boot/dts/somc/../qcom/sdm845.dtb
+  DTC     arch/arm64/boot/dts/somc/../qcom/sdm845-v2.dtb
+  DTC     arch/arm64/boot/dts/somc/../qcom/sdm845-v2.1.dtb
+  DTC     arch/arm64/boot/dts/somc/sdm845-tama-aurora_generic-overlay.dtbo
+  DTC     arch/arm64/boot/dts/somc/sdm845-v2-tama-aurora_generic-overlay.dtbo
+  DTC     arch/arm64/boot/dts/somc/sdm845-v2.1-tama-aurora_generic-overlay.dtbo
+  CC      drivers/soc/qcom/event_timer.o
+  CC      drivers/vservices/session.o
+  CC      drivers/soc/qcom/dcc_v2.o
+  CC      drivers/soc/qcom/rpm_stats.o
+  CC      drivers/vservices/devio.o
+  CC      drivers/soc/qcom/rpmh_master_stat.o
+  CC      drivers/soc/qcom/smcinvoke.o
+  CC      drivers/soc/qcom/qmp-debugfs-client.o
+  CC      drivers/soc/qcom/qsee_ipc_irq_bridge.o
+  CC      drivers/vservices/core_client.o
+  CC      drivers/soc/qcom/debug_memory.o
+  CC      drivers/soc/qcom/board-rdtags.o
+  CC      drivers/vservices/core_server.o
+  CC      drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_main.o
+  CC      drivers/soc/qcom/last_subsys_errlog.o
+  CC      drivers/soc/qcom/last_logs.o
+  CC      drivers/soc/qcom/security_status.o
+  CC      drivers/vservices/protocol/block/server.o
+  CC      drivers/soc/qcom/console_setup.o
+  CC      drivers/vservices/protocol/block/client.o
+  LD      drivers/soc/qcom/built-in.o
+  LD      drivers/soc/built-in.o
+  LD      drivers/vservices/protocol/block/vservices_protocol_block_server.o
+  CC      drivers/vservices/protocol/core/server.o
+  CC      drivers/vservices/transport/axon.o
+  LD      drivers/vservices/protocol/block/vservices_protocol_block_client.o
+  LD      drivers/vservices/protocol/block/built-in.o
+  CC      drivers/vservices/protocol/serial/client.o
+  CC      drivers/vservices/protocol/core/client.o
+  LD      drivers/vservices/transport/vtransport_axon.o
+  LD      drivers/vservices/transport/built-in.o
+  CC      drivers/vservices/protocol/serial/server.o
+  LD      drivers/vservices/protocol/serial/vservices_protocol_serial_client.o
+  LD      drivers/vservices/vservices.o
+  LD      drivers/vservices/protocol/core/vservices_protocol_core_server.o
+  LD      drivers/vservices/protocol/core/vservices_protocol_core_client.o
+  LD      drivers/vservices/protocol/core/built-in.o
+  LD      drivers/vservices/protocol/serial/vservices_protocol_serial_server.o
+  LD      drivers/vservices/protocol/serial/built-in.o
+  LD      drivers/vservices/protocol/built-in.o
+  LD      drivers/vservices/built-in.o
+  LD      drivers/staging/qcacld-3.0/wlan.o
+  LD      drivers/staging/qcacld-3.0/built-in.o
+  LD      drivers/staging/built-in.o
+  LD      drivers/built-in.o
+  GEN     .version
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+WARNING: modpost: Found 2 section mismatch(es).
+To see full details build your kernel with:
+'make CONFIG_DEBUG_SECTION_MISMATCH=y'
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  KSYM    .tmp_kallsyms1.o
+  KSYM    .tmp_kallsyms2.o
+  LD      vmlinux
+  SORTEX  vmlinux
+  SYSMAP  System.map
+  OBJCOPY arch/arm64/boot/Image
+  DTC     arch/arm64/boot/dts/qcom/apq8096-db820c.dtb
+  DTC     arch/arm64/boot/dts/qcom/msm8916-mtp.dtb
+  Building modules, stage 2.
+  MODPOST 0 modules
+  DTC     arch/arm64/boot/dts/qcom/msm8996-mtp.dtb
+  DTC     arch/arm64/boot/dts/qcom/sdm845.dtb
+  DTC     arch/arm64/boot/dts/qcom/apq8016-sbc.dtb
+  DTC     arch/arm64/boot/dts/qcom/sdm845-v2.dtb
+  DTC     arch/arm64/boot/dts/qcom/sdm845-v2.1.dtb
+  DTC     arch/arm64/boot/dts/somc/sdm845-v2-tama-aurora_generic.dtb
+  DTC     arch/arm64/boot/dts/somc/sdm845-v2.1-tama-aurora_generic.dtb
+  DTC     arch/arm64/boot/dts/somc/sdm845-tama-aurora_generic.dtb
+  GZIP    arch/arm64/boot/Image.gz
+  CAT     arch/arm64/boot/Image.gz-dtb
+make[1]: Leaving directory '/workspaces/codespaces-blank/android_kernel_sony_sdm845/out'

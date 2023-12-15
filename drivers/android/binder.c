@@ -3732,7 +3732,7 @@ static int binder_thread_write(struct binder_proc *proc,
 					if (ctx_mgr_node->proc == proc) {
 						binder_user_error("%d:%d context manager tried to acquire desc 0\n",
 								  proc->pid, thread->pid);
-						mutex_unlock(&context->context_mgr_node_lock);
+						rt_mutex_unlock(&context->context_mgr_node_lock);
 						return -EINVAL;
 					}
 					ret = binder_inc_ref_for_node(

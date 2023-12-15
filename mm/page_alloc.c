@@ -3515,7 +3515,7 @@ static void wake_all_kswapds(unsigned int order, gfp_t gfp_mask,
 	for_each_zone_zonelist_nodemask(zone, z, ac->zonelist, high_zoneidx,
 					ac->nodemask) {
 		if (last_pgdat != zone->zone_pgdat)
-			wakeup_kswapd(zone, gfp_mask, order, high_zoneidx);
+			wakeup_kswapd(zone, gfp_mask, order, high_zoneidx);;
 		last_pgdat = zone->zone_pgdat;
 	}
 }
